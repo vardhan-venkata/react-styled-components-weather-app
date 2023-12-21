@@ -69,7 +69,7 @@ function App() {
     e.preventDefault();
     const apiResponse = await axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c85a4f532dc2f7e0496949316236ca98`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=apiKey`
       )
       .then(function (response) {
         setWeather(response.data);
